@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sort</title>
+       <meta http-equiv="refresh" content="3">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                #grad1 {
+background: rgb(0,205,210);
+background: radial-gradient(circle, rgba(0,205,210,1) 0%, rgba(10,126,232,1) 92%);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
+</head>
+<body id="grad1">
+<p>hey</p>
+<table>
+  <tr>
+    <th>خانه</th>
+      <th>متراژ</th>
+    <th>قیمت کل</th>
+      <th>قیمت هر متر </th>
+      <th>کاربری</th>
+      <th>طبقه</th>
+      <th>سال ساخت</th>
+      <th>تعداد اتاق</th>
+      <th>شماره تلفن </th>
+
+  </tr>
+    {%for n in range (items)%}
+       <tr>
+           <td>{{pages_banck1[n].name}}</td>
+           <td>{{pages_banck1[n].metr}}</td>
+    <td>{{pages_banck1[n].allmony}}</td>
+    <td>{{pages_banck1[n].mony_int}}</td>
+    <td>{{pages_banck1[n].karbar}}</td>
+           <td>{{pages_banck1[n].tabage}}</td>
+           <td>{{pages_banck1[n].salsakht}}</td>
+           <td>{{pages_banck1[n].room}}</td>
+        </tr>
+    {%endfor%}
+    </table>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+            .main {
+        background-color: #FFFFFF;
+        width: 400px;
+        height: 800px;
+        margin: 7em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+            .main1 {
+        background-color: #FFFFFF;
+        width: 900px;
+        height: 2000px;
+        margin: 10em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    .sign {
+        padding-top: 40px;
+        color: #8C55AA;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    .un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+    form.form1 {
+        padding-top: 40px;
+    }
+
+    .pass {
+            width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+
+    .un:focus, .pass:focus {
+        border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+    }
+
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+        .submit1 {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #9C27B0, #E040FB, #6a6f8c);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 13px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+
+    .forgot {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #E1BEE7;
+        padding-top: 15px;
+    }
+
+    a {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #E1BEE7;
+        text-decoration: none
+    }
+
+    @media (max-width: 600px) {
+        .main {
+            border-radius: 0px;
+        }
+
+
+#grad1 {
+  height: 200px;
+  background-color: #ffccff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #66ffcc , #ffff99);
+}
+
+
+
+        .in {
+            width: 25%;
+            padding: 5px;
+            margin: 4px;
+            border: 3px solid #555;
+            border-radius: 10px;
+        }
+    }
+    </style>
+</head>
+<body id="grad">
+
+  <div class="main">
+
+    <form class="form1" action="/" method="post">
+            <p class="sign" align="center">شهر</p>
+      <input class="un " type="text" align="center" placeholder="شهر" name="city" >
+        <hr>
+    <p class="sign" align="center">متراژ</p>
+      <input class="un " type="text" align="center" placeholder="حداقل " name="metr" >
+      <input class="un " type="text" align="center" placeholder="حداکثر" name="metr1" >
+        <hr>
+    <p class="sign" align="center">قیمت</p>
+      <input class="un " type="text" align="center" placeholder="حداقل " name="mony1" >
+      <input class="un " type="text" align="center" placeholder="حداکثر" name="mony2" >
+      <center>
+        <input class="btn btn-outline-primary" value="enter" type="submit">
+        <a href=""></a>
+        <br> <br><br> <br><br> <br>
+                             <a href="/result" type="button" class="btn btn-outline-danger">نمایش </a>
+<br> <br>
+                   <a href="/sort" type="button" class="btn btn-outline-info">سورت قیمت هر متر </a>
+        <br> <br>
+                   <a href="/sort_all" type="button" class="btn btn-outline-primary">سورت قیمت کل</a>
+      <br> <br>
+      </center>
+    </form>
+
+
+      </div>
+</body>
+</html>
