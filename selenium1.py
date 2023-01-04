@@ -1,5 +1,7 @@
 from selenium import webdriver
-driver = webdriver.Chrome('./chromedriver')
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 input1=input("احتیاج به کدام شهر داری؟")#We get city input from the user
 if input1=="saveh":#If Saveh entered
     driver.get("https://divar.ir/s/saveh/buy-apartment?q=%D8%A7%D9%BE%D8%A7%D8%B1%D8%AA%D9%85%D8%A7%D9%86")#Enter the wall of Saveh

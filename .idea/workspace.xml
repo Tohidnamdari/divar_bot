@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0cfd7f9-7243-433b-91b7-3ce8ed476cf0" name="Default Changelist" comment="" />
+    <list default="true" id="b0cfd7f9-7243-433b-91b7-3ce8ed476cf0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/selenium_edition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/selenium_edition.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/name.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium1.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selenium_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/city.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/city.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/first.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sigin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sortall.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sortall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tess.py" beforeDir="false" afterPath="$PROJECT_DIR$/tess.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +53,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2DisvwjQEI2mwE3d8qQaK5VL9wJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -53,52 +78,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.یی">
-    <configuration name="result.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/selenium_edition/templates/result.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.home.html">
+    <configuration name="city.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/city.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="یی" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="selenium_edition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/یی.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/home.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="selenium_edition" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+    <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/register.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="selenium_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -147,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.یی" />
+        <item itemvalue="JavaScript Debug.home.html" />
         <item itemvalue="Python.selenium_01" />
-        <item itemvalue="JavaScript Debug.result.html" />
+        <item itemvalue="JavaScript Debug.city.html" />
+        <item itemvalue="JavaScript Debug.register.html" />
         <item itemvalue="Python.tess" />
-        <item itemvalue="Python.database" />
       </list>
     </recent_temporary>
   </component>
@@ -291,6 +278,19 @@
       <workItem from="1670954795100" duration="1771000" />
       <workItem from="1671368191714" duration="4378000" />
       <workItem from="1671694431821" duration="2859000" />
+      <workItem from="1671697868255" duration="452000" />
+      <workItem from="1671821872456" duration="1977000" />
+      <workItem from="1672084576160" duration="833000" />
+      <workItem from="1672157491547" duration="2457000" />
+      <workItem from="1672324341630" duration="1807000" />
+      <workItem from="1672571744577" duration="615000" />
+      <workItem from="1672574815131" duration="3280000" />
+      <workItem from="1672657583637" duration="2681000" />
+      <workItem from="1672691273193" duration="1172000" />
+      <workItem from="1672733766131" duration="3840000" />
+      <workItem from="1672751347729" duration="1219000" />
+      <workItem from="1672828308069" duration="334000" />
+      <workItem from="1672860669020" duration="758000" />
     </task>
     <servers />
   </component>
@@ -306,26 +306,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="26" key="#selenium_01/0.0.1536.824@0.0.1536.824" timestamp="1665337529782" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1668957912038">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1672326498113">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1668957912038" />
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1671697239968">
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1672326498113" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1671822626561">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1671697239968" />
-    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1671697239968">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1671822626561" />
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1672861532647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1671697239968" />
-    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1671697239968">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1672861532647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1671697239968" />
-    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1671697239968">
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1672861532647">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1671697239968" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1672861532647">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1670774603522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -362,14 +366,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1669726948180" />
-    <state x="277" y="54" key="SettingsEditor" timestamp="1671696773364">
+    <state x="277" y="54" key="SettingsEditor" timestamp="1672324593226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1671696773364" />
-    <state x="285" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1670766024686">
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1672324593226" />
+    <state x="285" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1672733766034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="285" y="259" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1670766024686" />
+    <state x="285" y="259" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1672733766034" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1670955166777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -388,13 +392,16 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/selenium_edition$selenium1.coverage" NAME="selenium1 Coverage Results" MODIFIED="1662445020285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/divarbot$selenium1.coverage" NAME="selenium1 Coverage Results" MODIFIED="1672161238020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$emadchokh.coverage" NAME="emadchokh Coverage Results" MODIFIED="1662278619334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$.coverage" NAME="یی Coverage Results" MODIFIED="1671697211924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$selenium_01.coverage" NAME="selenium_01 Coverage Results" MODIFIED="1671696943538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$database.coverage" NAME="database Coverage Results" MODIFIED="1669576203172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$tess.coverage" NAME="tess Coverage Results" MODIFIED="1670773881211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$sel.coverage" NAME="sel Coverage Results" MODIFIED="1664876667889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/divarbot$selenium_01.coverage" NAME="selenium_01 Coverage Results" MODIFIED="1672860893055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$seleniumpy.coverage" NAME="seleniumpy Coverage Results" MODIFIED="1664997583471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/divarbot$tess.coverage" NAME="tess Coverage Results" MODIFIED="1672691451955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$nr_e_.coverage" NAME="nr=e= Coverage Results" MODIFIED="1662914043265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
