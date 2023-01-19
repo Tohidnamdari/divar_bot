@@ -6,26 +6,14 @@ db.create_all()
 from database import home,Users
 from database import app
 
-
-labels = [
-]
-
-values = [
-
-]
-
-colors = [
-    "#F7464A", "#46BFBD", "#FDB45C", "#FEDCBA",
-    "#ABCDEF", "#DDDDDD", "#ABCABC", "#4169E1",
-    "#C71585", "#FF4500", "#FEDCBA", "#46BFBD"]
-@app.route('/chart',methods=['GET','POST'])
-def chart():
-    if request.cookies.get("user"):
-        line_labels= home.query.all()
-        line_values= home.query.all()
-        return render_template('chart.html',user=request.cookies.get("user"), title='Bitcoin Monthly Price in USD', labels=line_labels, values=line_values)
-    else:
-        return redirect('/login')
+# @app.route('/chart',methods=['GET','POST'])
+# def chart():
+#     if request.cookies.get("user"):
+#         line_labels= labels
+#         line_values= values
+#         return render_template('chart.html',user=request.cookies.get("user"), title='Bitcoin Monthly Price in USD', labels=line_labels, values=line_values)
+#     else:
+#         return redirect('/login')
 @app.route("/logout")
 def logout():
     response = make_response(redirect('/login'))
@@ -119,10 +107,10 @@ def result():
     else:
         return redirect('/login')
 @app.route('/',methods=['GET','POST'])
-def home():
-    return render_template('home.html',user=request.cookies.get("user"))
+def ind():
+    return render_template('ind.html',user=request.cookies.get("user"))
 @app.route('/add',methods=['GET','POST'])
-def city():
+def add():
     global Number_ph
     if request.cookies.get("user"):
         if request.method == 'POST':
@@ -137,41 +125,42 @@ def city():
                 #sleep(2)
                 #login_w=driver.find_element_by_xpath('/html/body/div/div/header/nav/div/div[3]/div/div/div/button').click()
                 #sleep(30)
-                j = driver.find_elements_by_class_name("kt-post-card__title")  # تمام المنت ها رو باز توی متغیر میزیزیم تا روش کلیک بشه
-                for i in range(len(j)):
-                    name=j[i].text
+                title = driver.find_elements_by_class_name("kt-post-card__title")  # تمام المنت ها رو باز توی متغیر میزیزیم تا روش کلیک بشه
+                for i in range(len(title)):
+                    name=title[i].text
 
-                    j[i].click()
+                    title[i].click()
                     print(driver.title)
                     sleep(2)
-                    d = driver.find_elements_by_class_name("kt-unexpandable-row__value")
-                    if d[0]:
-                        metr=d[0].text
+                    Information = driver.find_elements_by_class_name("kt-unexpandable-row__value")
+                    if Information[0]:
+
+                        metr=Information[0].text
 
 
-                    if d[1]:
-                        allmony=d[1].text
+                    if Information[1]:
+                        allmony=Information[1].text
 
 
-                    if d[2]:
-                       mony=d[2].text
+                    if Information[2]:
+                       mony=Information[2].text
 
 
-                    if d[3]:
-                       karbar=d[3].text
+                    if Information[3]:
+                       karbar=Information[3].text
 
 
 
                     sleep(2)
-                    s=driver.find_elements_by_class_name("kt-group-row-item__value")
-                    if s:
-                        tabage=s[0].text
+                    Information2=driver.find_elements_by_class_name("kt-group-row-item__value")
+                    if Information2:
+                        tabage=Information2[0].text
 
 
-                        salsakht=s[1].text
+                        salsakht=Information2[1].text
 
 
-                        room=s[2].text
+                        room=Information2[2].text
 
 
                     sleep(3)
@@ -188,15 +177,15 @@ def city():
                         #lk.append(xk.text)
                     #sleep(3)
                     sleep(3)
-                    tabage = d[3].text
+                    tabage = Information[3].text
 
-                    salsakht = s[1].text
+                    salsakht = Information2[1].text
 
-                    room = s[2].text
-                    metr =s[0].text
-                    allmony = d[0].text
-                    mony = d[1].text
-                    karbar = d[2].text
+                    room = Information2[2].text
+                    metr =Information2[0].text
+                    allmony = Information[0].text
+                    mony = Information[1].text
+                    karbar = Information[2].text
                     admin = home(name=name, metr=metr, allmony=allmony, mony=mony, karbar=karbar, tabage=tabage,
                                  salsakht=salsakht, room=room)
                     db.session.add(admin)
@@ -204,7 +193,7 @@ def city():
                     sleep(1)
                     driver.back()
 
-                    j = driver.find_elements_by_class_name("kt-post-card__title")  # تمام المنت ها رو باز توی متغیر میزیزیم تا روش کلیک بشه
+                    title = driver.find_elements_by_class_name("kt-post-card__title")  # تمام المنت ها رو باز توی متغیر میزیزیم تا روش کلیک بشه
                     sleep(1)
 
                 return render_template('city.html',user=request.cookies.get("user"))

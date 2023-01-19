@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0cfd7f9-7243-433b-91b7-3ce8ed476cf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/selenium_edition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/selenium_edition.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/name.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium1.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/name.db" beforeDir="false" afterPath="$PROJECT_DIR$/name.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selenium_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/add.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/chart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/city.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/city.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/first.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ind.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/lio.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sigin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/panel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/panel_admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sort.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/sortall.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sortall.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tess.py" beforeDir="false" afterPath="$PROJECT_DIR$/tess.py" afterDir="false" />
@@ -78,11 +73,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.home.html">
+  <component name="RunManager" selected="Python.selenium_01">
     <configuration name="city.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/city.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="home.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/home.html" useBuiltInWebServerPort="true">
+    <configuration name="ind.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/ind.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/divarbot/templates/register.html" useBuiltInWebServerPort="true">
@@ -134,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.home.html" />
         <item itemvalue="Python.selenium_01" />
+        <item itemvalue="JavaScript Debug.ind.html" />
+        <item itemvalue="Python.tess" />
         <item itemvalue="JavaScript Debug.city.html" />
         <item itemvalue="JavaScript Debug.register.html" />
-        <item itemvalue="Python.tess" />
       </list>
     </recent_temporary>
   </component>
@@ -290,7 +285,18 @@
       <workItem from="1672733766131" duration="3840000" />
       <workItem from="1672751347729" duration="1219000" />
       <workItem from="1672828308069" duration="334000" />
-      <workItem from="1672860669020" duration="758000" />
+      <workItem from="1672860669020" duration="1071000" />
+      <workItem from="1673028480220" duration="789000" />
+      <workItem from="1673085950599" duration="18000" />
+      <workItem from="1673085981118" duration="654000" />
+      <workItem from="1673108605434" duration="1229000" />
+      <workItem from="1673109967762" duration="4000" />
+      <workItem from="1673118311613" duration="466000" />
+      <workItem from="1673183485539" duration="4453000" />
+      <workItem from="1673358741296" duration="455000" />
+      <workItem from="1673519295669" duration="1750000" />
+      <workItem from="1673764272066" duration="687000" />
+      <workItem from="1674132001291" duration="745000" />
     </task>
     <servers />
   </component>
@@ -302,10 +308,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="532" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1669575141911" />
-    <state x="496" y="26" key="#selenium_01" timestamp="1665337529782">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="496" y="26" key="#selenium_01/0.0.1536.824@0.0.1536.824" timestamp="1665337529782" />
     <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1672326498113">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -314,22 +316,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1671822626561" />
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1672861532647">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1674132600757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
-    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1672861532647">
+    <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1674132600757" />
+    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1674132600757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
-    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1672861532647">
+    <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1674132600757" />
+    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1674132600757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
-    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1672861532647">
+    <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1674132600757" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1674132600757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1672861532647" />
+    <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1674132600757" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1670774603522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -370,10 +372,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1672324593226" />
-    <state x="285" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1672733766034">
+    <state x="285" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1674132004049">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="285" y="259" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1672733766034" />
+    <state x="285" y="259" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1674132004049" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1670955166777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -399,9 +401,9 @@
     <SUITE FILE_PATH="coverage/selenium_edition$database.coverage" NAME="database Coverage Results" MODIFIED="1669576203172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$tess.coverage" NAME="tess Coverage Results" MODIFIED="1670773881211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$sel.coverage" NAME="sel Coverage Results" MODIFIED="1664876667889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/divarbot$selenium_01.coverage" NAME="selenium_01 Coverage Results" MODIFIED="1672860893055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/divarbot$selenium_01.coverage" NAME="selenium_01 Coverage Results" MODIFIED="1674132495708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$seleniumpy.coverage" NAME="seleniumpy Coverage Results" MODIFIED="1664997583471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/divarbot$tess.coverage" NAME="tess Coverage Results" MODIFIED="1672691451955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/divarbot$tess.coverage" NAME="tess Coverage Results" MODIFIED="1673521036019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/selenium_edition$nr_e_.coverage" NAME="nr=e= Coverage Results" MODIFIED="1662914043265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
