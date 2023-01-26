@@ -68,10 +68,9 @@ def sort_all():
             db.session.commit()
 
         l = home.query.order_by(home.all_int).all()
-        for pa in l:
-            print(pa)
-            values.append(pa)
-            labels.append(home.name)
+
+
+
 
         return render_template('sortall.html',user=request.cookies.get("user"),items=len(home.query.all()),pages_banck1=l)
     else:
@@ -200,5 +199,9 @@ def add():
         return render_template('city.html',user=request.cookies.get("user"))
     else:
         return redirect('/login')
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error-404.html'), 404
 if __name__=='__main__':
     app.run()

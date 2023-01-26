@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <title>sort</title>
        <meta http-equiv="refresh" content="3">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
                 #grad1 {
@@ -34,29 +32,29 @@ tr:nth-child(even) {
 </head>
 <body >
 {%include 'nav.html'%}
-<table>
+<table dir="ltr" >
   <tr>
-    <th>خانه</th>
-      <th>متراژ</th>
-    <th>قیمت کل</th>
-      <th>قیمت هر متر </th>
-      <th>کاربری</th>
-      <th>طبقه</th>
-      <th>سال ساخت</th>
-      <th>تعداد اتاق</th>
-      <th>شماره تلفن </th>
+    <th  >خانه</th>
+      <th > متراژ</th>
+    <th  >قیمت کل</th>
+      <th  >قیمت هر متر </th>
+      <th  >کاربری</th>
+      <th  >طبقه</th>
+      <th  >سال ساخت</th>
+      <th  >تعداد اتاق</th>
+      <th  >شماره تلفن </th>
 
   </tr>
     {%for n in range (items)%}
        <tr>
-           <td>{{pages_banck1[n].name}}</td>
-           <td>{{pages_banck1[n].metr}}</td>
-    <td>{{pages_banck1[n].allmony}}</td>
-    <td>{{pages_banck1[n].mony_int}}</td>
-    <td>{{pages_banck1[n].karbar}}</td>
-           <td>{{pages_banck1[n].tabage}}</td>
-           <td>{{pages_banck1[n].salsakht}}</td>
-           <td>{{pages_banck1[n].room}}</td>
+           <td >{{pages_banck1[n].name}}</td>
+           <td  >{{pages_banck1[n].metr}}</td>
+    <td  >{{pages_banck1[n].allmony}}</td>
+    <td >{{pages_banck1[n].mony_int}}</td>
+    <td >{{pages_banck1[n].karbar}}</td>
+           <td >{{pages_banck1[n].tabage}}</td>
+           <td >{{pages_banck1[n].salsakht}}</td>
+           <td >{{pages_banck1[n].room}}</td>
         </tr>
     {%endfor%}
     </table>
