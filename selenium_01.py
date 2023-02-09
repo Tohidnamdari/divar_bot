@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect,make_response
+from flask import Flask,render_template,request,redirect,make_response,flash
 from selenium import webdriver
 from time import sleep
 from database import db
@@ -14,8 +14,12 @@ from database import app
 #         return render_template('chart.html',user=request.cookies.get("user"), title='Bitcoin Monthly Price in USD', labels=line_labels, values=line_values)
 #     else:
 #         return redirect('/login')
+@app.route('/Relationship',methods=['GET','POST'])
+def Relationship():
+        return render_template('Relationship.html',user=request.cookies.get("user"))
 @app.route("/logout")
 def logout():
+    flash("کاربر خارج شد", "danger")
     response = make_response(redirect('/login'))
     response.delete_cookie("user")
     return response
@@ -27,11 +31,13 @@ def login():
         found=False
         for u in range(len(Users.query.all())):
             if user==Users.query.all()[u].username and pas==Users.query.all()[u].password:
+                flash("کاربر وارد شد", "success")
                 response=make_response(redirect('/'))
                 response.set_cookie("user",user)
                 found = True
                 return response
         if found==False:
+                flash("نام کاربری یا رمز عبور اشتباه است", "danger")
                 return render_template('login.html',user=request.cookies.get("user"))
     return render_template('login.html',user=request.cookies.get("user"))
 @app.route('/register',methods=['POST','GET'])
@@ -40,12 +46,15 @@ def Register():
         user_name1 = request.form.get('user')
         password1 = request.form.get('pas')
         re_password = request.form.get('pass')
-        if password1==re_password:
+        if len(user_name1)==6 and len(password1)==8 and password1==re_password:
+            flash("کاربر ثبت نام شد", "success")
             admin1=Users(username=user_name1,password=password1)
+            print(admin1)
             db.session.add(admin1)
             db.session.commit()
             return redirect('/add')
         else:
+            flash("رمز عبور با تکرار ان همخوانی ندارد یا فرمت نام کاربری یا رمز عبور اشتباه است", "danger")
             return render_template('Register.html',user=request.cookies.get("user"))
     else:
         return render_template('Register.html',user=request.cookies.get("user"))
@@ -176,8 +185,11 @@ def add():
                         #lk.append(xk.text)
                     #sleep(3)
                     sleep(3)
-                    tabage = Information[3].text
-
+                    if Information[3].text=="همکف":
+                        tabage = Information[3].text
+                    else:
+                        e= Information[3].text.split("از")
+                        tabage=e[0]
                     salsakht = Information2[1].text
 
                     room = Information2[2].text
@@ -191,7 +203,6 @@ def add():
                     db.session.commit()
                     sleep(1)
                     driver.back()
-
                     title = driver.find_elements_by_class_name("kt-post-card__title")  # تمام المنت ها رو باز توی متغیر میزیزیم تا روش کلیک بشه
                     sleep(1)
 
@@ -204,4 +215,4 @@ def add():
 def page_not_found(e):
     return render_template('error-404.html'), 404
 if __name__=='__main__':
-    app.run()
+    app.run(host='0.0.0.0',port=80)
