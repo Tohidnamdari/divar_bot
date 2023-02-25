@@ -156,6 +156,12 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
             border-radius: 10px;
         }
     }
+                .p{
+            font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        #bot:hover{
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+        }
     </style>
 </head>
 <body>
@@ -166,10 +172,13 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
     <form class="form1">
       <input class="un " type="text" align="center" placeholder="نام کاربری " name="user" required>
         <input class="pass" type="password" align="center" placeholder="رمز" name="pas" required>
-      <center>
-        <input class="btn btn-dark" value="ورود" type="submit">
-       <a class="btn btn-dark"  href="/register">ثبت نام</a>
-        </center>
+                <center>
+<br>
+  <input style="width: 60%" align="center" id="bot" class="btn btn-dark " type="submit" value="ورود">
+<br><br><br>
+                    <p class="p" style="width: 60%">:اگرحساب کاربری ندارید ثبت نام کنید</p>
+       <a style="width: 20%" class="btn btn-dark"  href="/register">ثبت نام</a>
+          </center>
         </form>
   </div>
 

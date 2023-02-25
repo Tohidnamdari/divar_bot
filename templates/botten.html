@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>botten</title>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
+<style>
+    .press{
+         background-color: #d5d622;
+        width: 150px;
+        height: 70px;
+        border-radius: 10px;
+        margin: auto;
+        padding: 1%;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+        transition: all 0.3s linear;
+    }
+    /* .press:hover{*/
+    /*    box-shadow: 5px 5px 10px rgba(0,0,0,0.7) inset;*/
+    /*    transform: rotate(10deg);*/
+    /*}*/
+</style>
+</head>
+<body>
+<br>
+<div class="container">
+   <div class="press" id="press">
+       <h5>press me!</h5>
+   </div>
+</div>
+<script>
+    content=document.getElementById('press');
+    content.addEventListener('onmouseenter',(event) => {
+    content.style.transform='rotate(10deg)';
+        console.log("onmouseenter")
+        setTimeout(500,function(){
+            content.style.transform='rotate(-10deg)';
+        })
+});
+
+
+    content.addEventListener('onmouseleave',function(event){
+        content.style.transform='rotate(0deg)';
+        console.log("mouseleave")
+    })
+</script>
+</body>
+</html>

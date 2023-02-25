@@ -1,37 +1,103 @@
-from flask import Flask, Markup, render_template
-from database import home
-from database import app
 
-labels = [
-    'JAN', 'FEB', 'MAR', 'APR',
-    'MAY', 'JUN', 'JUL', 'AUG',
-    'SEP', 'OCT', 'NOV', 'DEC'
+jsonarray = [
+    {
+    'name':'email',
+    'datetime':"2017-09-15 04:00:00",
+    'length':70,
+    'description':'Answer all the emails received today.'
+    },
+    {
+    'name':'email',
+    'datetime':"2017-09-16 08:00:00",
+    'length':70,
+    'description':'Answer all the emails received today.'
+    },
+    {
+    'name':'email',
+    'datetime':"2017-09-15 03:00:00",
+    'length':70,
+    'description':'Answer all the emails received today.'
+    }
 ]
 
-values = []
 
-colors = [
-    "#F7464A", "#46BFBD", "#FDB45C", "#FEDCBA",
-    "#ABCDEF", "#DDDDDD", "#ABCABC", "#4169E1",
-    "#C71585", "#FF4500", "#FEDCBA", "#46BFBD"]
+import datetime
+import pandas as pd
+df = pd.DataFrame(jsonarray)
+df.datetime = pd.to_datetime(df.datetime)
 
-@app.route('/bar')
-def bar():
-    bar_labels=labels
-    bar_values=values
-    return render_template('bar_chart.html', title='Bitcoin Monthly Price in USD', max=17000, labels=bar_labels, values=bar_values)
+printformat = """
+Task Name: {}
+Start time: {}
+End time: {}
+Description: {}
+"""
 
-@app.route('/')
-def line():
-    line_labels=labels
-    line_values=home.query.all()
-    return render_template('chart.html', title='Bitcoin Monthly Price in USD', max=170000000000, labels=line_labels, values=line_values)
+def print_tasks(maskby):
+    mask = df[df['datetime'].dt.date.astype(str) == maskby].sort_values(by='datetime')
+    s = ['These are your tasks for {}:\n'.format(maskby)]
+    for ind,row in mask.iterrows():
+        name = row["name"]
+        stime = row["datetime"].strftime("%H:%M")
+        etime = (row["datetime"] + datetime.timedelta(minutes=row["length"])).strftime("%H:%M")
+        desc = row["description"]
+        s.append(printformat.format(name,stime,etime,desc))
+    return ''.join(s)
 
-@app.route('/pie')
-def pie():
-    pie_labels = labels
-    pie_values = values
-    return render_template('pie_chart.html', title='Bitcoin Monthly Price in USD', max=17000, set=zip(values, labels, colors))
+print(print_tasks("2017-09-15"))
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+
+ for 2017-09-15:
+
+Task Name: email
+Start time: 03:00
+End time: 04:10
+Description: Answer all the emails received today.
+
+Task Name: email
+Start time: 04:00
+End time: 05:10
+Description: Answer all the emails received today.
+
+
+array = [
+    ['email', 9, 15, 2, 10, 70, 'Answer all the emails received today.'],
+    ['email', 9, 15, 2, 0, 70, 'Answer all the emails received today.'],
+    ['email', 9, 15, 3, 0, 70, 'Answer all the emails received today.']
+]
+
+printformat = """
+Task Name: {}
+Start time: {}
+End time: {}
+Description: {}
+"""
+
+date = [9,15]
+s = ['These are your tasks for {}:\n'.format(date)]
+for item in sorted(array,key=lambda x:(x[3],x[4])):
+    if item[1:3] == date:
+        s.append(printformat.format(item[0],item[1],item[2],item[3]))
+
+print(''.join(s))
+
+
+These are your tasks for [9, 15]:
+
+Task Name: email
+Start time: 9
+End time: 15
+Description: 2
+
+Task Name: email
+Start time: 9
+End time: 15
+Description: 2
+
+Task Name: email
+Start time: 9
+End time: 15
+Description: 3
+
+
+

@@ -36,7 +36,7 @@
     border-radius: 20px;
     outline: none;
     box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
+    border: 2px solid rgba(0, 0, 0, 0.03);
     margin-bottom: 50px;
     margin-left: 46px;
     text-align: center;
@@ -49,7 +49,7 @@
     }
 
     .pass {
-            width: 76%;
+    width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
     font-size: 14px;
@@ -60,7 +60,7 @@
     border-radius: 20px;
     outline: none;
     box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
+    border: 2px solid rgba(0, 0, 0, 0.03);
     margin-bottom: 50px;
     margin-left: 46px;
     text-align: center;
@@ -154,6 +154,9 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
             border-radius: 10px;
         }
     }
+        .p{
+            font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
     </style>
 
 </head>
@@ -164,16 +167,69 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
     <p class="sign" align="center">ثبت نام </p>
     <form class="form1" action="signup" method="post">
       <input class="un " type="text" align="center" placeholder="نام کاربری" name="user" required>
-      <input class="pass" type="password" align="center" placeholder="رمز" name="pas" required>
-      <input class="pass" type="password" align="center" placeholder="تکرار رمز " name="pass" required>
-      <center>
-        <input class="btn btn-dark" value="ثبت نام" type="submit">
-       <a class="btn btn-dark"  href="/login">ورود</a>
+      <input class="pass" id="pass" type="password" align="center" placeholder="رمز عبور" name="pas" required>
+
+      <input class="pass" id="pass1"  type="password" align="center" placeholder="تکرار رمز" name="pass" required>
+                        <center>
+
+             <p id="info"></p>
+            <br>
+
+  <input style="width: 60%" class="btn btn-dark " type="submit" value="ثبت نام">
+<br><br><br>
+                    <p class="p" style="width: 60%">:اگرحساب کاربری دارید وارد شوید</p>
+       <a style="width: 20%" class="btn btn-dark"  href="/login">ورود</a>
           </center>
     </form>
   </div>
 
 
 </form>
-</body>
+<script>
+    pass1=document.getElementById('pass1')
+    pass=document.getElementById('pass')
+    info=document.getElementById('info')
+    console.log(pass)
+    console.log(pass1)
+    pass.addEventListener('change',(event)=>{
+        console.log(pass.value.length)
+        if (pass.value.length<8)
+    {
+        console.log("behind")
+        info.innerHTML="پسورد باید دارای حداقل 8 رقم باشد"
+        info.style.display='block';
+        info.style.color="#ff0000";
+        info.style.fontSize='12px';
+        info.style.margin='auto';
+        pass.style.borderColor="#ff0000";
+
+    }
+    else{
+        pass.style.borderColor='#c8c8c8';
+
+        console.log("up");
+        info.style.display='none';
+    }
+    })
+      pass1.addEventListener('change',(event)=>{
+        console.log(pass.value.length)
+        if (pass1.value!==pass.value)
+    {
+        info.innerHTML="پسورد با تکرار ان همخوانی ندارد"
+        info.style.display='block';
+        info.style.color="#ff0000";
+        info.style.fontSize='12px';
+        info.style.margin='auto';
+        pass.style.borderColor="#ff0000";
+        pass1.style.borderColor="#ff0000";
+
+    }
+    else{
+                pass.style.borderColor='#c8c8c8';
+                pass1.style.borderColor='#c8c8c8';
+
+        info.style.display='none';
+    }
+    })
+</script></body>
 </html>

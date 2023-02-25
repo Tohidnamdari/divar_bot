@@ -8,6 +8,10 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
 
@@ -16,6 +20,45 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
 
     <style>
+        .switch {
+
+    align-self: flex-end;
+float: left;
+    margin: 0.9375rem;
+
+}
+
+.inner-switch {
+
+    display: inline-block;
+
+    cursor: pointer;
+
+    border: 1px solid #555;
+
+    border-radius: 1.25rem;
+
+    width: 5rem;
+
+    text-align: center;
+
+    font-size: 1rem;
+
+    padding: 0.1875rem;
+
+    margin-left: 0.3125rem;
+
+}
+.dark,
+.dark * {
+
+    background-color: #222;
+
+    color: #e6e6e6;
+
+    border-color: #e6e6e6;
+
+}
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -66,6 +109,47 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
+        #home:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+        }
+
+        #result:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+        }
+
+        #real:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+        }
+
+        #fil:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+        #out:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+
+        #in:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+
+        #re:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+
+        #real1:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+
+        #real12:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+        #in:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+        }
+
     </style>
 
 
@@ -122,7 +206,7 @@
           <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
 
             <li>
-              <a href="/" class="nav-link text-secondary">
+              <a href="/" class="nav-link text-secondary" id="home">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"/></svg>
                 خانه
               </a>
@@ -130,7 +214,7 @@
 {%if user:%}
             <li class="nav-item dropdown">
 
-          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a id="result" class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
                 نمایش
               </a>
@@ -142,19 +226,19 @@
           </ul>
             </li>
             <li>
-              <a href="/add" class="nav-link text-white">
+              <a id="fil" href="/add" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
                 فیلتر
               </a>
             </li>
                             <li>
-              <a href="/Relationship" class="nav-link text-white">
+              <a id="real" href="/Relationship" class="nav-link text-white">
                                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#Relationship"/></svg>
                   ارتباط با ما
               </a>
             </li>
             <li>
-              <a href="/logout" class="nav-link text-white">
+              <a id="out" href="/logout" class="nav-link text-white">
                 <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
                 خروج
               </a>
@@ -162,14 +246,14 @@
               {%endif%}
           {%if not user:%}
                        <li>
-              <a href="/login" class="nav-link text-white">
+              <a id="in" href="/login" class="nav-link text-white">
                                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-2"/></svg>
 
                 ورود
               </a>
             </li>
                                      <li>
-              <a href="/register" class="nav-link text-white">
+              <a id="re" href="/register" class="nav-link text-white">
                                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-1"/></svg>
 
                 ثبت نام
@@ -177,12 +261,19 @@
             </li>
 
               <li>
-              <a href="/Relationship" class="nav-link text-white">
+              <a id="real1" href="/Relationship" class="nav-link text-white">
                                   <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#Relationship"/></svg>
                   ارتباط با ما
               </a>
             </li>
               {%endif%}
+              <li>
+                      <div  class="switch" >حالت تاریک:
+
+                         <span id="real12" class="inner-switch">خاموش</span>
+
+                      </div>
+              </li>
           </ul>
 
 
@@ -195,9 +286,26 @@
 
 </main>
 
-
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $( ".inner-switch" ).on("click", function() {
 
+    if( $( "body" ).hasClass( "dark" )) {
+
+      $( "body" ).removeClass( "dark" );
+
+      $( ".inner-switch" ).text( "خاموش" );
+
+    } else {
+
+      $( "body" ).addClass( "dark" );
+
+      $( ".inner-switch" ).text( "روشن" );
+
+    }
+
+});
+</script>
 
   </body>
 </html>
