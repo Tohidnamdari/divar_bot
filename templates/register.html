@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <style>
+            <style>
     .main {
         background-color: #FFFFFF;
         width: 500px;
@@ -173,6 +170,7 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
                         <center>
 
              <p id="info"></p>
+             <p id="info2"></p>
             <br>
 
   <input style="width: 60%" class="btn btn-dark " type="submit" value="ثبت نام">
@@ -189,6 +187,7 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
     pass1=document.getElementById('pass1')
     pass=document.getElementById('pass')
     info=document.getElementById('info')
+    info2=document.getElementById('info2')
     console.log(pass)
     console.log(pass1)
     pass.addEventListener('change',(event)=>{
@@ -215,11 +214,11 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
         console.log(pass.value.length)
         if (pass1.value!==pass.value)
     {
-        info.innerHTML="پسورد با تکرار ان همخوانی ندارد"
-        info.style.display='block';
-        info.style.color="#ff0000";
-        info.style.fontSize='12px';
-        info.style.margin='auto';
+        info2.innerHTML="پسورد با تکرار ان همخوانی ندارد"
+        info2.style.display='block';
+        info2.style.color="#ff0000";
+        info2.style.fontSize='12px';
+        info2.style.margin='auto';
         pass.style.borderColor="#ff0000";
         pass1.style.borderColor="#ff0000";
 
@@ -228,7 +227,7 @@ background: radial-gradient(circle, rgba(0,205,210,1) 92%, rgba(10,126,232,1) 0%
                 pass.style.borderColor='#c8c8c8';
                 pass1.style.borderColor='#c8c8c8';
 
-        info.style.display='none';
+        info2.style.display='none';
     }
     })
 </script></body>

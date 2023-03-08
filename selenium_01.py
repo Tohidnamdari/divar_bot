@@ -46,16 +46,18 @@ def Register():
         user_name1 = request.form.get('user')
         password1 = request.form.get('pas')
         re_password = request.form.get('pass')
-        if len(user_name1)==6 and len(password1)==8 and password1==re_password:
+        if password1==re_password and len(password1)==8:
             flash("کاربر ثبت نام شد", "success")
             admin1=Users(username=user_name1,password=password1)
             print(admin1)
             db.session.add(admin1)
             db.session.commit()
+
             return redirect('/add')
         else:
-            flash("رمز عبور با تکرار ان همخوانی ندارد یا فرمت نام کاربری یا رمز عبور اشتباه است", "danger")
-            return render_template('Register.html',user=request.cookies.get("user"))
+            flash("رمز عبور با تکرار ان همخوانی ندارد یا تعداد ارقام  رمز عبور کمتر از 8 میباشد ", "danger")
+
+            return redirect('/register')
     else:
         return render_template('Register.html',user=request.cookies.get("user"))
 
